@@ -1,0 +1,237 @@
+/* line 1, ../sass/_general.sass */
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Poller One", cursive;
+  color: #2f2f2f;
+}
+
+/* line 4, ../sass/_general.sass */
+h1 {
+  font-size: 40px;
+}
+
+/* line 6, ../sass/_general.sass */
+h2 {
+  font-size: 35px;
+}
+
+/* line 8, ../sass/_general.sass */
+h3 {
+  font-size: 30px;
+}
+
+/* line 10, ../sass/_general.sass */
+h4 {
+  font-size: 25px;
+}
+
+/* line 12, ../sass/_general.sass */
+h5 {
+  font-size: 22.5px;
+}
+
+/* line 14, ../sass/_general.sass */
+h6 {
+  font-size: 20px;
+}
+
+/* line 16, ../sass/_general.sass */
+p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 16px;
+}
+
+/* line 19, ../sass/_general.sass */
+a {
+  font-family: "Poller One", cursive;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+/* line 24, ../sass/_general.sass */
+body {
+  margin: auto;
+  background-color: #6d6d6d;
+}
+
+/* line 28, ../sass/_general.sass */
+.main {
+  margin-left: 160px;
+}
+@media screen and (max-width: 800px) {
+  /* line 28, ../sass/_general.sass */
+  .main {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+
+/* line 1, ../sass/_section__header.sass */
+.header__charlyr {
+  background-color: #ececec;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 160px;
+  height: 100vh;
+}
+@media screen and (max-width: 800px) {
+  /* line 1, ../sass/_section__header.sass */
+  .header__charlyr {
+    min-width: 100%;
+    max-height: 100px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+/* line 24, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--img__charlyr {
+  display: block;
+  background-image: url(../images/CharlyR.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-left: 5px;
+  height: 50px;
+  width: 150px;
+}
+@media screen and (max-width: 800px) {
+  /* line 24, ../sass/_section__header.sass */
+  .header__charlyr .header__charlyr--img__charlyr {
+    margin: auto;
+    margin-left: 50%;
+    left: -135px;
+    height: 90px;
+    width: 270px;
+    opacity: 0.2;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+  }
+}
+/* line 47, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--nav {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+  padding-right: 10px;
+}
+@media screen and (max-width: 800px) {
+  /* line 47, ../sass/_section__header.sass */
+  .header__charlyr .header__charlyr--nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 15px;
+    padding-left: 10px;
+    z-index: 2;
+  }
+}
+/* line 64, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--nav li {
+  margin: 10px 0px 10px 0px;
+  list-style-type: none;
+}
+/* line 67, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--nav li:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  /* line 70, ../sass/_section__header.sass */
+  .header__charlyr .header__charlyr--nav li:last-child:last-child {
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+/* line 73, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--nav li a {
+  color: rgba(47, 47, 47, 0.5);
+}
+@media screen and (max-width: 800px) {
+  /* line 73, ../sass/_section__header.sass */
+  .header__charlyr .header__charlyr--nav li a {
+    margin: 0px 5px;
+    color: #2f2f2f;
+  }
+}
+/* line 78, ../sass/_section__header.sass */
+.header__charlyr .header__charlyr--nav li a:hover {
+  color: #2f2f2f;
+}
+
+/*--------------flagues langue----------*/
+ *
+ * /*.header__charlyr--langue
+ *     border: 3px solid rgb(255, 0, 0)
+ *     display: block
+ *     display: flex
+ *     flex-direction: row
+ *     justify-content: space-around
+ *     align-items: center
+ *     height: 50px
+ *     @media screen and (max-width:800px)
+ *       height: 100%
+ *       flex-direction: column
+ *       justify-content: space-between
+ *       align-items: center
+ *       margin-right: 5px
+ *     @media screen and (max-width:700px)
+ *
+ *
+ *       /*.header__charlyr--img__fr
+ *         display: block
+ *         background:
+ *           image: url(../images/France.png)
+ *           position: center
+ *           size: cover
+ *         height: 30px
+ *         width: 30px
+ *         @media screen and (max-width:800px)
+ *           height: 25px
+ *           width: 25px
+ *         @media screen and (max-width:700px)
+ *           height: 20px
+ *           width: 20px
+ *
+ *       /*.header__charlyr--img__de
+ *         display: block
+ *         background:
+ *           position: center
+ *           size: cover
+ *           image: url(../images/Deutsch.png)
+ *         height: 30px
+ *         width: 30px
+ *         @media screen and (max-width:800px)
+ *           height: 25px
+ *           width: 25px
+ *         @media screen and (max-width:700px)
+ *           height: 20px
+ *           width: 20px
+ *
+ *       /*.header__charlyr--img__en
+ *         display: block
+ *         background:
+ *           position: center
+ *           size: cover
+ *           image: url(../images/English.png)
+ *         height: 30px
+ *         width: 30px
+ *         @media screen and (max-width:800px)
+ *           height: 25px
+ *           width: 25px
+ *         @media screen and (max-width:700px)
+ *           height: 20px
+ *           width: 20px */
