@@ -1,8 +1,51 @@
 .section__oeuvres
   max-width: 100%
-  height: 900px
+  min-height: 900px
   background:
     image: url(../images/pinceau_bg.png)
     repeat: no-repeat
     position: right
     size: cover
+
+  @media screen and (max-width:800px)
+    min-height: 450px
+
+
+.section__oeuvres--tableaux
+  padding: 0px 25px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+
+  @media screen and (max-width:800px)
+    background-color: rgba(0, 0, 0, 0.5)
+    //rgba(236, 236, 236, 0.2)
+    border: 1px solid rgba(0, 0, 0, 1)
+    border-radius: 15px
+    margin: 0px 10px
+    height: 300px
+    overflow: scroll
+    padding: 0px
+
+
+.section__oeuvres--tableaux--images
+  height: 250px
+  width: 250px
+  margin: 25px
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @media screen and (max-width:850px)
+    margin: 10px
+  @media screen and (max-width:800px)
+    margin: 10px 5px
+
+strong
+  position: relative
+  //vertical-align: middle
+  left: -125px
+  z-index: 2

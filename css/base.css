@@ -13,6 +13,7 @@ h1 {
 h2 {
   font-size: 35px;
   margin-left: 15%;
+  margin-top: 0px;
 }
 @media screen and (max-width: 500px) {
   /* line 6, ../sass/_general.sass */
@@ -21,51 +22,51 @@ h2 {
   }
 }
 
-/* line 11, ../sass/_general.sass */
+/* line 12, ../sass/_general.sass */
 h3 {
   font-size: 30px;
 }
 
-/* line 13, ../sass/_general.sass */
+/* line 14, ../sass/_general.sass */
 h4 {
   font-size: 25px;
 }
 
-/* line 15, ../sass/_general.sass */
+/* line 16, ../sass/_general.sass */
 h5 {
   font-size: 22.5px;
 }
 
-/* line 17, ../sass/_general.sass */
+/* line 18, ../sass/_general.sass */
 h6 {
   font-size: 20px;
 }
 
-/* line 19, ../sass/_general.sass */
+/* line 20, ../sass/_general.sass */
 p {
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
 }
 
-/* line 22, ../sass/_general.sass */
+/* line 23, ../sass/_general.sass */
 a {
   font-family: "Poller One", cursive;
   color: #2f2f2f;
   text-decoration: none;
 }
 
-/* line 27, ../sass/_general.sass */
+/* line 28, ../sass/_general.sass */
 body {
   margin: auto;
   background-color: #6d6d6d;
 }
 
-/* line 31, ../sass/_general.sass */
+/* line 32, ../sass/_general.sass */
 .main {
   padding-left: 160px;
 }
 @media screen and (max-width: 800px) {
-  /* line 31, ../sass/_general.sass */
+  /* line 32, ../sass/_general.sass */
   .main {
     margin-left: auto;
     margin-top: 10px;
@@ -257,7 +258,7 @@ body {
   margin-left: 5%;
   border: 1px solid black;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 800px) {
   /* line 1, ../sass/_section__tete.sass */
@@ -282,7 +283,7 @@ body {
   max-width: 100%;
   max-height: 500px;
   margin: 0px 0px 0px 0px;
-  padding: 30px 0px 30px 0px;
+  padding: 10px 0px 30px 0px;
   background-image: url(../images/bois_bg.png);
   background-position: center;
   background-size: cover;
@@ -323,9 +324,68 @@ body {
 /* line 1, ../sass/_section__oeuvres.sass */
 .section__oeuvres {
   max-width: 100%;
-  height: 900px;
+  min-height: 900px;
   background-image: url(../images/pinceau_bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  /* line 1, ../sass/_section__oeuvres.sass */
+  .section__oeuvres {
+    min-height: 450px;
+  }
+}
+
+/* line 14, ../sass/_section__oeuvres.sass */
+.section__oeuvres--tableaux {
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  /* line 14, ../sass/_section__oeuvres.sass */
+  .section__oeuvres--tableaux {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 0px 10px;
+    height: 300px;
+    overflow: scroll;
+    padding: 0px;
+  }
+}
+
+/* line 33, ../sass/_section__oeuvres.sass */
+.section__oeuvres--tableaux--images {
+  height: 250px;
+  width: 250px;
+  margin: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 850px) {
+  /* line 33, ../sass/_section__oeuvres.sass */
+  .section__oeuvres--tableaux--images {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 33, ../sass/_section__oeuvres.sass */
+  .section__oeuvres--tableaux--images {
+    margin: 10px 5px;
+  }
+}
+
+/* line 47, ../sass/_section__oeuvres.sass */
+strong {
+  position: relative;
+  left: -125px;
+  z-index: 2;
 }
