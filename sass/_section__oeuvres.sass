@@ -1,6 +1,7 @@
 .section__oeuvres
   max-width: 100%
   min-height: 900px
+  padding-top: 30px
   background:
     image: url(../images/pinceau_bg.png)
     repeat: no-repeat
@@ -12,7 +13,7 @@
 
 
 .section__oeuvres--tableaux
-  padding: 0px 25px
+  padding: 20px 25px 10px 25px
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -20,12 +21,11 @@
   align-items: center
 
   @media screen and (max-width:800px)
-    background-color: rgba(0, 0, 0, 0.5)
-    //rgba(236, 236, 236, 0.2)
+    background-color: rgba(0, 0, 0, 0.3)
     border: 1px solid rgba(0, 0, 0, 1)
     border-radius: 15px
     margin: 0px 10px
-    height: 300px
+    height: 320px
     overflow: scroll
     padding: 0px
 
@@ -42,10 +42,38 @@
   @media screen and (max-width:850px)
     margin: 10px
   @media screen and (max-width:800px)
-    margin: 10px 5px
+    margin: 20px 5px
+    height: 300px
 
-strong
-  position: relative
-  //vertical-align: middle
-  left: -125px
-  z-index: 2
+.nom
+  visibility: hidden
+  @media screen and (max-width:800px)
+    top: -10px
+    visibility: visible
+    color: #ffffff
+    padding: 15px
+    border-radius: 15px
+    background-color: rgba(0, 0, 0, 0.7)
+
+.section__oeuvres--tableaux--images:hover
+  .tableau
+    opacity: 0.7
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7)
+    border-radius: 15px
+    @media screen and (max-width:800px)
+      opacity: 1
+  .nom
+    height: 50px
+    width: 100px
+    background:
+      color: rgba(0, 0, 0, 0.7)
+
+    color: #ffffff
+    visibility: visible
+    padding: 15px
+    margin: 0px
+    border-radius: 15px
+    position: relative
+    top: -100px
+    @media screen and (max-width:800px)
+      margin-bottom: 5px
