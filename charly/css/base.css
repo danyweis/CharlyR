@@ -1,87 +1,87 @@
-/* line 1, ../sass/_general.sass */
+/* line 1, H:/Web/CharlyR/sass/_general.sass */
 h1, h2, h3, h4, h5, h6, a {
   font-family: "Poller One", cursive;
   color: black;
   text-decoration: underline;
 }
 
-/* line 5, ../sass/_general.sass */
+/* line 5, H:/Web/CharlyR/sass/_general.sass */
 h1 {
   font-size: 40px;
 }
 
-/* line 7, ../sass/_general.sass */
+/* line 7, H:/Web/CharlyR/sass/_general.sass */
 h2 {
   font-size: 35px;
   margin-left: 15%;
   margin-top: 0px;
 }
 @media screen and (max-width: 500px) {
-  /* line 7, ../sass/_general.sass */
+  /* line 7, H:/Web/CharlyR/sass/_general.sass */
   h2 {
     margin-left: 10%;
     margin-top: 50px;
   }
 }
 
-/* line 14, ../sass/_general.sass */
+/* line 14, H:/Web/CharlyR/sass/_general.sass */
 h3 {
   font-size: 30px;
 }
 
-/* line 16, ../sass/_general.sass */
+/* line 16, H:/Web/CharlyR/sass/_general.sass */
 h4 {
   text-align: center;
   font-size: 34px;
   margin-top: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 16, ../sass/_general.sass */
+  /* line 16, H:/Web/CharlyR/sass/_general.sass */
   h4 {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 16, ../sass/_general.sass */
+  /* line 16, H:/Web/CharlyR/sass/_general.sass */
   h4 {
     font-size: 16px;
   }
 }
 
-/* line 24, ../sass/_general.sass */
+/* line 24, H:/Web/CharlyR/sass/_general.sass */
 h5 {
   font-size: 22.5px;
 }
 
-/* line 26, ../sass/_general.sass */
+/* line 26, H:/Web/CharlyR/sass/_general.sass */
 h6 {
   font-size: 20px;
 }
 
-/* line 28, ../sass/_general.sass */
+/* line 28, H:/Web/CharlyR/sass/_general.sass */
 p {
   font-family: "Oxygen", sans-serif;
 }
 
-/* line 31, ../sass/_general.sass */
+/* line 31, H:/Web/CharlyR/sass/_general.sass */
 a {
   font-family: "Poller One", cursive;
   color: #2f2f2f;
   text-decoration: none;
 }
 
-/* line 36, ../sass/_general.sass */
+/* line 36, H:/Web/CharlyR/sass/_general.sass */
 body {
   margin: auto;
   background-color: #6d6d6d;
 }
 
-/* line 40, ../sass/_general.sass */
+/* line 40, H:/Web/CharlyR/sass/_general.sass */
 .main {
   padding-left: 160px;
 }
 @media screen and (max-width: 800px) {
-  /* line 40, ../sass/_general.sass */
+  /* line 40, H:/Web/CharlyR/sass/_general.sass */
   .main {
     margin-left: auto;
     margin-top: 10px;
@@ -90,7 +90,7 @@ body {
   }
 }
 
-/* line 1, ../sass/_section__header.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr {
   background-color: #ececec;
   position: fixed;
@@ -105,7 +105,7 @@ body {
   border-right: 1px solidrgba(0, 0, 0, 0.7);
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__header.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__header.sass */
   .header__charlyr {
     background-color: white;
     min-width: 100%;
@@ -122,7 +122,7 @@ body {
     border-bottom: 1px solidrgba(0, 0, 0, 0.7);
   }
 }
-/* line 29, ../sass/_section__header.sass */
+/* line 29, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--img__charlyr {
   display: block;
   background-image: url(../images/CharlyR.png);
@@ -135,7 +135,7 @@ body {
   width: 150px;
 }
 @media screen and (max-width: 800px) {
-  /* line 29, ../sass/_section__header.sass */
+  /* line 29, H:/Web/CharlyR/sass/_section__header.sass */
   .header__charlyr .header__charlyr--img__charlyr {
     margin: auto;
     margin-left: 50%;
@@ -148,7 +148,7 @@ body {
     z-index: 2;
   }
 }
-/* line 52, ../sass/_section__header.sass */
+/* line 52, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--nav {
   display: block;
   display: flex;
@@ -158,7 +158,7 @@ body {
   padding-right: 10px;
 }
 @media screen and (max-width: 800px) {
-  /* line 52, ../sass/_section__header.sass */
+  /* line 52, H:/Web/CharlyR/sass/_section__header.sass */
   .header__charlyr .header__charlyr--nav {
     display: flex;
     flex-direction: row;
@@ -169,33 +169,33 @@ body {
     z-index: 3;
   }
 }
-/* line 69, ../sass/_section__header.sass */
+/* line 69, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--nav li {
   margin: 10px 0px 10px 0px;
   list-style-type: none;
 }
-/* line 72, ../sass/_section__header.sass */
+/* line 72, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--nav li:last-child {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 800px) {
-  /* line 75, ../sass/_section__header.sass */
+  /* line 75, H:/Web/CharlyR/sass/_section__header.sass */
   .header__charlyr .header__charlyr--nav li:last-child:last-child {
     margin-right: 0px 15px 10px 15px;
   }
 }
-/* line 77, ../sass/_section__header.sass */
+/* line 77, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--nav li a {
   color: #464646;
 }
 @media screen and (max-width: 800px) {
-  /* line 77, ../sass/_section__header.sass */
+  /* line 77, H:/Web/CharlyR/sass/_section__header.sass */
   .header__charlyr .header__charlyr--nav li a {
     margin: 0px 5px;
     color: #464646;
   }
 }
-/* line 82, ../sass/_section__header.sass */
+/* line 82, H:/Web/CharlyR/sass/_section__header.sass */
 .header__charlyr .header__charlyr--nav li a:hover {
   color: black;
 }
@@ -263,7 +263,7 @@ body {
  *         @media screen and (max-width:700px)
  *           height: 20px
  *           width: 20px */
-/* line 1, ../sass/_section__tete.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__tete.sass */
 .section__tete--image {
   max-height: 200px;
   max-width: 90%;
@@ -275,14 +275,14 @@ body {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__tete.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__tete.sass */
   .section__tete--image {
     margin-top: 120px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 1, ../sass/_section__tete.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__tete.sass */
   .section__tete--image {
     max-width: 100%;
     margin-left: 0%;
@@ -292,7 +292,7 @@ body {
   }
 }
 
-/* line 1, ../sass/_section__biogr.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__biogr.sass */
 .section__biogr {
   max-width: 100%;
   min-height: 300px;
@@ -305,7 +305,7 @@ body {
   background-z-index: 1;
 }
 
-/* line 13, ../sass/_section__biogr.sass */
+/* line 13, H:/Web/CharlyR/sass/_section__biogr.sass */
 .section--block {
   margin: 0% 10%;
   min-height: 170px;
@@ -316,7 +316,7 @@ body {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 500px) {
-  /* line 13, ../sass/_section__biogr.sass */
+  /* line 13, H:/Web/CharlyR/sass/_section__biogr.sass */
   .section--block {
     max-height: 250px;
     overflow: scroll;
@@ -324,7 +324,7 @@ body {
   }
 }
 
-/* line 28, ../sass/_section__biogr.sass */
+/* line 28, H:/Web/CharlyR/sass/_section__biogr.sass */
 .biogr--tete {
   float: left;
   margin-right: 16px;
@@ -335,7 +335,7 @@ body {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 
-/* line 1, ../sass/_section__oeuvres.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .section__oeuvres {
   max-width: 100%;
   min-height: 900px;
@@ -346,13 +346,13 @@ body {
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__oeuvres.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres {
     min-height: 450px;
   }
 }
 
-/* line 15, ../sass/_section__oeuvres.sass */
+/* line 15, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .section__oeuvres--tableaux {
   padding: 20px 25px 10px 25px;
   display: flex;
@@ -362,7 +362,7 @@ body {
   align-items: center;
 }
 @media screen and (max-width: 800px) {
-  /* line 15, ../sass/_section__oeuvres.sass */
+  /* line 15, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres--tableaux {
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid black;
@@ -374,7 +374,7 @@ body {
   }
 }
 
-/* line 33, ../sass/_section__oeuvres.sass */
+/* line 33, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .section__oeuvres--tableaux--images {
   height: 250px;
   width: 250px;
@@ -386,70 +386,71 @@ body {
   justify-content: center;
 }
 @media screen and (max-width: 850px) {
-  /* line 33, ../sass/_section__oeuvres.sass */
+  /* line 33, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres--tableaux--images {
     margin: 10px;
     height: 350px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 33, ../sass/_section__oeuvres.sass */
+  /* line 33, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres--tableaux--images {
     margin: 20px 5px;
     height: 300px;
   }
 }
 
-/* line 48, ../sass/_section__oeuvres.sass */
+/* line 48, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .nom {
   visibility: hidden;
 }
 @media screen and (max-width: 800px) {
-  /* line 48, ../sass/_section__oeuvres.sass */
+  /* line 48, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .nom {
     top: -10px;
     visibility: visible;
     color: white;
-    padding: 15px;
+    padding: 0px;
+    margin-bottom: 0px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
-/* line 59, ../sass/_section__oeuvres.sass */
+/* line 60, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .section__oeuvres--tableaux--images:hover .tableau {
   opacity: 0.7;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
   border-radius: 15px;
 }
 @media screen and (max-width: 800px) {
-  /* line 59, ../sass/_section__oeuvres.sass */
+  /* line 60, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres--tableaux--images:hover .tableau {
     opacity: 1;
   }
 }
-/* line 65, ../sass/_section__oeuvres.sass */
+/* line 67, H:/Web/CharlyR/sass/_section__oeuvres.sass */
 .section__oeuvres--tableaux--images:hover .nom {
   height: 50px;
   width: 100px;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   visibility: visible;
-  padding: 15px;
+  padding: 10px;
   margin: 0px;
   border-radius: 15px;
   position: relative;
   top: -100px;
 }
 @media screen and (max-width: 800px) {
-  /* line 65, ../sass/_section__oeuvres.sass */
+  /* line 67, H:/Web/CharlyR/sass/_section__oeuvres.sass */
   .section__oeuvres--tableaux--images:hover .nom {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     top: 0px;
   }
 }
 
-/* line 1, ../sass/_section__philo.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__philo.sass */
 .section__philo {
   max-width: 100%;
   min-height: 500px;
@@ -461,13 +462,13 @@ body {
   padding-bottom: 10%;
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__philo.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__philo.sass */
   .section__philo {
     min-height: 450px;
   }
 }
 
-/* line 14, ../sass/_section__philo.sass */
+/* line 14, H:/Web/CharlyR/sass/_section__philo.sass */
 .section__philo--block {
   border-radius: 15px;
   max-width: 80%;
@@ -482,14 +483,14 @@ body {
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
-  /* line 14, ../sass/_section__philo.sass */
+  /* line 14, H:/Web/CharlyR/sass/_section__philo.sass */
   .section__philo--block {
     max-height: 300px;
     padding-left: 10px;
   }
 }
 
-/* line 31, ../sass/_section__philo.sass */
+/* line 31, H:/Web/CharlyR/sass/_section__philo.sass */
 .section__philo--block--text {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
   background-color: #ececec;
@@ -500,7 +501,7 @@ body {
   border: 1px solid black;
 }
 @media screen and (max-width: 800px) {
-  /* line 31, ../sass/_section__philo.sass */
+  /* line 31, H:/Web/CharlyR/sass/_section__philo.sass */
   .section__philo--block--text {
     max-height: 250px;
     max-width: 300px;
@@ -508,7 +509,7 @@ body {
   }
 }
 
-/* line 1, ../sass/_section__contact.sass */
+/* line 1, H:/Web/CharlyR/sass/_section__contact.sass */
 .section__contact {
   max-width: 100%;
   min-height: 400px;
@@ -520,35 +521,35 @@ body {
   padding-bottom: 10%;
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__contact.sass */
+  /* line 1, H:/Web/CharlyR/sass/_section__contact.sass */
   .section__contact {
     min-height: 350px;
   }
 }
 
-/* line 13, ../sass/_section__contact.sass */
+/* line 13, H:/Web/CharlyR/sass/_section__contact.sass */
 .social {
   font-size: 19px;
 }
 
-/* line 15, ../sass/_section__contact.sass */
+/* line 15, H:/Web/CharlyR/sass/_section__contact.sass */
 .section__contact--logo {
   text-align: center;
 }
 
-/* line 19, ../sass/_section__contact.sass */
+/* line 19, H:/Web/CharlyR/sass/_section__contact.sass */
 .pin {
   border-radius: 50%;
   margin: 0px 22px;
 }
 
-/* line 23, ../sass/_section__contact.sass */
+/* line 23, H:/Web/CharlyR/sass/_section__contact.sass */
 .insta {
   border-radius: 50%;
   margin: 0px 22px;
 }
 
-/* line 1, ../sass/_footer.sass */
+/* line 1, H:/Web/CharlyR/sass/_footer.sass */
 .footer {
   max-width: 100%;
   min-height: 100px;
@@ -561,7 +562,7 @@ body {
   background-z-index: 1;
 }
 
-/* line 13, ../sass/_footer.sass */
+/* line 13, H:/Web/CharlyR/sass/_footer.sass */
 .footer--block {
   font-size: 20px;
   margin: 0% 10%;
@@ -573,7 +574,7 @@ body {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 500px) {
-  /* line 13, ../sass/_footer.sass */
+  /* line 13, H:/Web/CharlyR/sass/_footer.sass */
   .footer--block {
     max-height: 250px;
     overflow: scroll;
