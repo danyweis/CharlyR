@@ -1,149 +1,45 @@
-.header__charlyr
-  background-color: #ececec
-  position: fixed
-  top: 0px
-  left: 0px
-  bottom: 0px
-  display: flex
-  flex-direction: column
-  justify-content: space-around
-  width: 160px
-  height: 100vh
-  border-right: 1px solidrgba(0, 0, 0, 0.7)
-  @media screen and (max-width:800px)
-    background-color: #ffffff
-    min-width: 100%
-    max-height: 100px
-    top: 0px
-    right: 0px
-    left: 0px
-    bottom: auto
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    position: relative
+.boiteLogo
+    width: 100%
+    height: 102px
     position: fixed
-    border-bottom: 1px solidrgba(0, 0, 0, 0.7)
-
-
-  .header__charlyr--img__charlyr
-    display: block
+    top: -1px
     background:
-      image: url(../images/CharlyR.png)
-      position: center
-      size: contain
-      repeat: no-repeat
-    margin-top: 50px
-    margin-left: 5px
-    height: 50px
-    width: 150px
-    @media screen and (max-width:800px)
-      margin: auto
-      margin-left: 50%
-      left: -135px
-      height: 90px
-      width: 270px
-      opacity: 0.2
-      text-align: center
-      position: absolute
-      z-index: 2
-
-
-  .header__charlyr--nav
-    display: block
+        color: #ececec
+.logoCharlyR
+    width: 80%
+    height: 100px
+    float: left
+    background:
+        image: url(../images/CharlyR.png)
+        size: contain
+        position: center
+        repeat: no-repeat
+.menuButton
+    width: 20%
+    height: 100px
+    float: left
     display: flex
     flex-direction: column
-    justify-content: space-around
-    text-align: right
-    padding-right: 10px
-    @media screen and (max-width:800px)
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      margin: auto
-      font-size: 15px
-      padding-left: 10px
-      z-index: 3
+    justify-content: center
+    align-items: center
+.menu
+    width: 40px
+    height: 5px
+    margin: 2.5px 0px
+    border-radius: 2px
+    background:
+        color: #6d6d6d
 
-
-    li
-      margin: 10px 0px 10px 0px
-      list-style-type: none
-      &:last-child
-        margin-bottom: 0px
-        @media screen and (max-width:800px)
-          &:last-child
-            margin-right: 0px 15px 10px 15px
-      a
-        color: rgba(70, 70, 70, 1)
-        @media screen and (max-width:800px)
-          margin: 0px 5px
-          color: rgba(70, 70, 70, 1)
-      a:hover
-        color: rgba(0, 0, 0, 1)
-
-
-
-/*--------------flagues langue----------*/
-
-    /*.header__charlyr--langue
-        border: 3px solid rgb(255, 0, 0)
-        display: block
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        align-items: center
-        height: 50px
-        @media screen and (max-width:800px)
-          height: 100%
-          flex-direction: column
-          justify-content: space-between
-          align-items: center
-          margin-right: 5px
-        @media screen and (max-width:700px)
-
-
-          /*.header__charlyr--img__fr
-            display: block
-            background:
-              image: url(../images/France.png)
-              position: center
-              size: cover
-            height: 30px
-            width: 30px
-            @media screen and (max-width:800px)
-              height: 25px
-              width: 25px
-            @media screen and (max-width:700px)
-              height: 20px
-              width: 20px
-
-          /*.header__charlyr--img__de
-            display: block
-            background:
-              position: center
-              size: cover
-              image: url(../images/Deutsch.png)
-            height: 30px
-            width: 30px
-            @media screen and (max-width:800px)
-              height: 25px
-              width: 25px
-            @media screen and (max-width:700px)
-              height: 20px
-              width: 20px
-
-          /*.header__charlyr--img__en
-            display: block
-            background:
-              position: center
-              size: cover
-              image: url(../images/English.png)
-            height: 30px
-            width: 30px
-            @media screen and (max-width:800px)
-              height: 25px
-              width: 25px
-            @media screen and (max-width:700px)
-              height: 20px
-              width: 20px
+.header__charlyr
+    position: absolute
+    background-color: #ececec
+    right: 0px
+    display: none
+ul
+    padding-left: 0px
+    margin: 0px
+li
+    padding: 5px 10px
+    list-style: none
+    border-top: 1px solid #2f2f2f
+    font-size: 25px

@@ -1,341 +1,124 @@
-/* line 1, ../sass/_general.sass */
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Poller One", cursive;
   color: black;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
-/* line 5, ../sass/_general.sass */
 h1 {
-  font-size: 40px;
-}
+  font-size: 40px; }
 
-/* line 7, ../sass/_general.sass */
 h2 {
-  font-size: 35px;
-  margin-left: 15%;
-  margin-top: 0px;
-}
-@media screen and (max-width: 500px) {
-  /* line 7, ../sass/_general.sass */
-  h2 {
-    margin-left: 10%;
-    margin-top: 50px;
-  }
-}
+  font-size: 35px; }
 
-/* line 14, ../sass/_general.sass */
 h3 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
-/* line 16, ../sass/_general.sass */
 h4 {
-  text-align: center;
-  font-size: 34px;
-  margin-top: 20px;
-}
-@media screen and (max-width: 800px) {
-  /* line 16, ../sass/_general.sass */
-  h4 {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 16, ../sass/_general.sass */
-  h4 {
-    font-size: 16px;
-  }
-}
+  font-size: 18px; }
 
-/* line 24, ../sass/_general.sass */
 h5 {
-  font-size: 22.5px;
-}
+  font-size: 22.5px; }
 
-/* line 26, ../sass/_general.sass */
 h6 {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
-/* line 28, ../sass/_general.sass */
 p {
-  font-family: "Oxygen", sans-serif;
-}
+  font-family: "Oxygen", sans-serif; }
 
-/* line 31, ../sass/_general.sass */
 a {
-  font-family: "Poller One", cursive;
+  font-family: "Oxygen", sans-serif;
   color: #2f2f2f;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/* line 36, ../sass/_general.sass */
 body {
-  margin: auto;
-  background-color: #6d6d6d;
-}
+  margin: 0px;
+  background-color: #6d6d6d; }
 
-/* line 40, ../sass/_general.sass */
 .main {
-  padding-left: 160px;
-}
-@media screen and (max-width: 800px) {
-  /* line 40, ../sass/_general.sass */
-  .main {
-    margin-left: auto;
-    margin-top: 10px;
-    padding-left: 0px;
-    z-index: 1;
-  }
-}
+  width: 100%;
+  margin: 0px; }
 
-/* line 1, ../sass/_section__header.sass */
-.header__charlyr {
-  background-color: #ececec;
+.boiteLogo {
+  width: 100%;
+  height: 102px;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 160px;
-  height: 100vh;
-  border-right: 1px solidrgba(0, 0, 0, 0.7);
-}
-@media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__header.sass */
-  .header__charlyr {
-    background-color: white;
-    min-width: 100%;
-    max-height: 100px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    position: fixed;
-    border-bottom: 1px solidrgba(0, 0, 0, 0.7);
-  }
-}
-/* line 29, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--img__charlyr {
-  display: block;
+  top: -1px;
+  background-color: #ececec; }
+
+.logoCharlyR {
+  width: 80%;
+  height: 100px;
+  float: left;
   background-image: url(../images/CharlyR.png);
-  background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  margin-left: 5px;
-  height: 50px;
-  width: 150px;
-}
-@media screen and (max-width: 800px) {
-  /* line 29, ../sass/_section__header.sass */
-  .header__charlyr .header__charlyr--img__charlyr {
-    margin: auto;
-    margin-left: 50%;
-    left: -135px;
-    height: 90px;
-    width: 270px;
-    opacity: 0.2;
-    text-align: center;
-    position: absolute;
-    z-index: 2;
-  }
-}
-/* line 52, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--nav {
-  display: block;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.menuButton {
+  width: 20%;
+  height: 100px;
+  float: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  text-align: right;
-  padding-right: 10px;
-}
-@media screen and (max-width: 800px) {
-  /* line 52, ../sass/_section__header.sass */
-  .header__charlyr .header__charlyr--nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    font-size: 15px;
-    padding-left: 10px;
-    z-index: 3;
-  }
-}
-/* line 69, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--nav li {
-  margin: 10px 0px 10px 0px;
-  list-style-type: none;
-}
-/* line 72, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--nav li:last-child {
-  margin-bottom: 0px;
-}
-@media screen and (max-width: 800px) {
-  /* line 75, ../sass/_section__header.sass */
-  .header__charlyr .header__charlyr--nav li:last-child:last-child {
-    margin-right: 0px 15px 10px 15px;
-  }
-}
-/* line 77, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--nav li a {
-  color: #464646;
-}
-@media screen and (max-width: 800px) {
-  /* line 77, ../sass/_section__header.sass */
-  .header__charlyr .header__charlyr--nav li a {
-    margin: 0px 5px;
-    color: #464646;
-  }
-}
-/* line 82, ../sass/_section__header.sass */
-.header__charlyr .header__charlyr--nav li a:hover {
-  color: black;
-}
+  justify-content: center;
+  align-items: center; }
 
-/*--------------flagues langue----------*/
- *
- * /*.header__charlyr--langue
- *     border: 3px solid rgb(255, 0, 0)
- *     display: block
- *     display: flex
- *     flex-direction: row
- *     justify-content: space-around
- *     align-items: center
- *     height: 50px
- *     @media screen and (max-width:800px)
- *       height: 100%
- *       flex-direction: column
- *       justify-content: space-between
- *       align-items: center
- *       margin-right: 5px
- *     @media screen and (max-width:700px)
- *
- *
- *       /*.header__charlyr--img__fr
- *         display: block
- *         background:
- *           image: url(../images/France.png)
- *           position: center
- *           size: cover
- *         height: 30px
- *         width: 30px
- *         @media screen and (max-width:800px)
- *           height: 25px
- *           width: 25px
- *         @media screen and (max-width:700px)
- *           height: 20px
- *           width: 20px
- *
- *       /*.header__charlyr--img__de
- *         display: block
- *         background:
- *           position: center
- *           size: cover
- *           image: url(../images/Deutsch.png)
- *         height: 30px
- *         width: 30px
- *         @media screen and (max-width:800px)
- *           height: 25px
- *           width: 25px
- *         @media screen and (max-width:700px)
- *           height: 20px
- *           width: 20px
- *
- *       /*.header__charlyr--img__en
- *         display: block
- *         background:
- *           position: center
- *           size: cover
- *           image: url(../images/English.png)
- *         height: 30px
- *         width: 30px
- *         @media screen and (max-width:800px)
- *           height: 25px
- *           width: 25px
- *         @media screen and (max-width:700px)
- *           height: 20px
- *           width: 20px */
-/* line 1, ../sass/_section__tete.sass */
+.menu {
+  width: 40px;
+  height: 5px;
+  margin: 2.5px 0px;
+  border-radius: 2px;
+  background-color: #6d6d6d; }
+
+.header__charlyr {
+  position: absolute;
+  background-color: #ececec;
+  right: 0px;
+  display: none; }
+
+ul {
+  padding-left: 0px;
+  margin: 0px; }
+
+li {
+  padding: 5px 10px;
+  list-style: none;
+  border-top: 1px solid #2f2f2f;
+  font-size: 25px; }
+
+.section__tete {
+  display: none;
+  margin-top: 101px;
+  width: 100%;
+  height: calc(100vh - 101px);
+  overflow: hidden;
+  background-color: #ececec; }
+
 .section__tete--image {
-  max-height: 200px;
-  max-width: 90%;
-  right: -100px;
-  margin: 50px 0px;
-  margin-left: 5%;
-  border: 1px solid black;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
-}
-@media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__tete.sass */
-  .section__tete--image {
-    margin-top: 120px;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 1, ../sass/_section__tete.sass */
-  .section__tete--image {
-    max-width: 100%;
-    margin-left: 0%;
-    border-left: none;
-    border-right: none;
-    border-radius: 0px;
-  }
-}
+  width: 100%;
+  height: auto;
+  margin: 0px; }
 
-/* line 1, ../sass/_section__biogr.sass */
 .section__biogr {
-  max-width: 100%;
-  min-height: 300px;
-  margin: 0px 0px 0px 0px;
-  padding: 10px 0px 30px 0px;
+  min-height: calc(100vh - 101px);
+  margin: 101px 0px 0px 0px;
+  padding: 0px 10px 10px 10px;
   background-image: url(../images/bois_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-z-index: 1;
-}
+  background-z-index: 1; }
 
-/* line 13, ../sass/_section__biogr.sass */
 .section--block {
-  margin: 0% 10%;
-  min-height: 170px;
-  background-color: #ececec;
-  border: 1px black solid;
+  background: pink;
   border-radius: 15px;
-  padding: 10px 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
-}
-@media screen and (max-width: 500px) {
-  /* line 13, ../sass/_section__biogr.sass */
-  .section--block {
-    max-height: 250px;
-    overflow: scroll;
-    border-radius: 10px;
-  }
-}
+  padding: 5px 15px; }
 
-/* line 28, ../sass/_section__biogr.sass */
 .biogr--tete {
+  margin: 16px 15px 15px 0px;
   float: left;
-  margin-right: 16px;
-  margin-bottom: 10px;
-  height: 150px;
-  border-radius: 10px;
-  border: 1px rgba(0, 0, 0, 0) solid;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
-}
+  max-width: 35%;
+  max-height: 300px; }
 
-/* line 1, ../sass/_section__oeuvres.sass */
 .section__oeuvres {
   max-width: 100%;
   min-height: 900px;
@@ -343,116 +126,11 @@ body {
   background-image: url(../images/pinceau_bg.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
-}
-@media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__oeuvres.sass */
-  .section__oeuvres {
-    min-height: 450px;
-  }
-}
+  background-size: cover; }
+  @media screen and (max-width: 800px) {
+    .section__oeuvres {
+      min-height: 450px; } }
 
-/* line 15, ../sass/_section__oeuvres.sass */
-.section__oeuvres--tableaux {
-  padding: 20px 25px 10px 25px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-@media screen and (max-width: 800px) {
-  /* line 15, ../sass/_section__oeuvres.sass */
-  .section__oeuvres--tableaux {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 0px 10px;
-    height: 320px;
-    overflow: scroll;
-    padding: 0px;
-  }
-}
-
-/* line 33, ../sass/_section__oeuvres.sass */
-.section__oeuvres--tableaux--images {
-  height: 250px;
-  width: 250px;
-  margin: 25px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 850px) {
-  /* line 33, ../sass/_section__oeuvres.sass */
-  .section__oeuvres--tableaux--images {
-    margin: 10px;
-    height: 350px;
-  }
-}
-@media screen and (max-width: 800px) {
-  /* line 33, ../sass/_section__oeuvres.sass */
-  .section__oeuvres--tableaux--images {
-    margin: 20px 5px;
-    height: 300px;
-  }
-}
-
-/* line 48, ../sass/_section__oeuvres.sass */
-.nom {
-  visibility: hidden;
-}
-@media screen and (max-width: 800px) {
-  /* line 48, ../sass/_section__oeuvres.sass */
-  .nom {
-    height: 50px;
-    width: 100px;
-    top: 0px;
-    visibility: visible;
-    color: white;
-    padding: 10px;
-    margin-bottom: 0px;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-
-/* line 62, ../sass/_section__oeuvres.sass */
-.section__oeuvres--tableaux--images:hover .tableau {
-  opacity: 0.7;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-}
-@media screen and (max-width: 800px) {
-  /* line 62, ../sass/_section__oeuvres.sass */
-  .section__oeuvres--tableaux--images:hover .tableau {
-    opacity: 1;
-    box-shadow: none;
-    border-radius: 0px;
-  }
-}
-/* line 71, ../sass/_section__oeuvres.sass */
-.section__oeuvres--tableaux--images:hover .nom {
-  height: 50px;
-  width: 100px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  visibility: visible;
-  padding: 10px;
-  border-radius: 15px;
-  position: relative;
-  top: -100px;
-}
-@media screen and (max-width: 800px) {
-  /* line 71, ../sass/_section__oeuvres.sass */
-  .section__oeuvres--tableaux--images:hover .nom {
-    top: 0px;
-  }
-}
-
-/* line 1, ../sass/_section__philo.sass */
 .section__philo {
   max-width: 100%;
   min-height: 500px;
@@ -461,16 +139,11 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 10%;
-  padding-bottom: 10%;
-}
-@media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__philo.sass */
-  .section__philo {
-    min-height: 450px;
-  }
-}
+  padding-bottom: 10%; }
+  @media screen and (max-width: 800px) {
+    .section__philo {
+      min-height: 450px; } }
 
-/* line 14, ../sass/_section__philo.sass */
 .section__philo--block {
   border-radius: 15px;
   max-width: 80%;
@@ -482,36 +155,26 @@ body {
   background-image: url(../images/tree.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-}
-@media screen and (max-width: 800px) {
-  /* line 14, ../sass/_section__philo.sass */
-  .section__philo--block {
-    max-height: 300px;
-    padding-left: 10px;
-  }
-}
+  background-size: cover; }
+  @media screen and (max-width: 800px) {
+    .section__philo--block {
+      max-height: 300px;
+      padding-left: 10px; } }
 
-/* line 31, ../sass/_section__philo.sass */
 .section__philo--block--text {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
   background-color: #ececec;
   max-width: 500px;
   padding: 15px;
   margin-right: 10px;
   border-radius: 10px;
-  border: 1px solid black;
-}
-@media screen and (max-width: 800px) {
-  /* line 31, ../sass/_section__philo.sass */
-  .section__philo--block--text {
-    max-height: 250px;
-    max-width: 300px;
-    overflow: scroll;
-  }
-}
+  border: 1px solid black; }
+  @media screen and (max-width: 800px) {
+    .section__philo--block--text {
+      max-height: 250px;
+      max-width: 300px;
+      overflow: scroll; } }
 
-/* line 1, ../sass/_section__contact.sass */
 .section__contact {
   max-width: 100%;
   min-height: 400px;
@@ -520,38 +183,25 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 10%;
-  padding-bottom: 10%;
-}
-@media screen and (max-width: 800px) {
-  /* line 1, ../sass/_section__contact.sass */
-  .section__contact {
-    min-height: 350px;
-  }
-}
+  padding-bottom: 10%; }
+  @media screen and (max-width: 800px) {
+    .section__contact {
+      min-height: 350px; } }
 
-/* line 13, ../sass/_section__contact.sass */
 .social {
-  font-size: 19px;
-}
+  font-size: 19px; }
 
-/* line 15, ../sass/_section__contact.sass */
 .section__contact--logo {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 19, ../sass/_section__contact.sass */
 .pin {
   border-radius: 50%;
-  margin: 0px 22px;
-}
+  margin: 0px 22px; }
 
-/* line 23, ../sass/_section__contact.sass */
 .insta {
   border-radius: 50%;
-  margin: 0px 22px;
-}
+  margin: 0px 22px; }
 
-/* line 1, ../sass/_footer.sass */
 .footer {
   max-width: 100%;
   min-height: 100px;
@@ -561,10 +211,8 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-z-index: 1;
-}
+  background-z-index: 1; }
 
-/* line 13, ../sass/_footer.sass */
 .footer--block {
   font-size: 20px;
   margin: 0% 10%;
@@ -573,13 +221,11 @@ body {
   border: 1px black solid;
   border-radius: 15px;
   padding: 10px 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
-}
-@media screen and (max-width: 500px) {
-  /* line 13, ../sass/_footer.sass */
-  .footer--block {
-    max-height: 250px;
-    overflow: scroll;
-    border-radius: 10px;
-  }
-}
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 500px) {
+    .footer--block {
+      max-height: 250px;
+      overflow: scroll;
+      border-radius: 10px; } }
+
+/*# sourceMappingURL=base.css.map */
