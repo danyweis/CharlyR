@@ -7,7 +7,9 @@ h1 {
   font-size: 40px; }
 
 h2 {
-  font-size: 35px; }
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-left: 10px; }
 
 h3 {
   font-size: 30px; }
@@ -99,8 +101,9 @@ li {
   margin: 0px; }
 
 .section__biogr {
+  display: none;
   min-height: calc(100vh - 101px);
-  margin: 101px 0px 0px 0px;
+  margin-top: 101px;
   padding: 0px 10px 10px 10px;
   background-image: url(../images/bois_bg.png);
   background-position: center;
@@ -109,9 +112,10 @@ li {
   background-z-index: 1; }
 
 .section--block {
-  background: pink;
+  background: rgba(236, 236, 236, 0.5);
   border-radius: 15px;
-  padding: 5px 15px; }
+  padding: 5px 15px;
+  border: 1px solid #2f2f2f; }
 
 .biogr--tete {
   margin: 16px 15px 15px 0px;
@@ -120,16 +124,49 @@ li {
   max-height: 300px; }
 
 .section__oeuvres {
+  height: calc(100vh - 101px);
   max-width: 100%;
-  min-height: 900px;
-  padding-top: 30px;
+  margin-top: 101px;
   background-image: url(../images/pinceau_bg.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover; }
-  @media screen and (max-width: 800px) {
-    .section__oeuvres {
-      min-height: 450px; } }
+
+#container {
+  width: calc(100vw - 20px);
+  max-height: calc(100vh - 170px);
+  overflow: hidden;
+  padding: 0px 10px; }
+
+#slideshow {
+  max-height: calc(100vh - 170px); }
+
+#slideshow img {
+  max-height: 100%;
+  max-width: 90%;
+  margin: 0px 5%;
+  left: 0px;
+  right: 0px; }
+
+#prev {
+  height: calc(100vh - 170px);
+  width: 45%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 150px 10px 0px 0px;
+  z-index: 1000; }
+
+#next {
+  height: calc(100vh - 170px);
+  width: 45%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 150px 0px 0px 10px;
+  z-index: 1000; }
 
 .section__philo {
   max-width: 100%;
