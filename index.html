@@ -76,9 +76,14 @@
                 <div class="section__oeuvres--tableaux">
                 <div id="container">
                     <div id="slideshow" class="cycle-slideshow"
-                    data-cycle-fx = "fade"
+                    data-cycle-fx = "shuffle"
                     data-cycle-speed = "600"
-                    data-cycle-timeout = "3000">
+                    data-cycle-timeout = "3000"
+                    data-cycle-next = "#next"
+                    data-cycle-prev = "#prev"
+                    data-cycle-manual-fx = "scrollHorz"
+                    data-cycle-manual-speed = "400">
+                        <!--data-cycle-pager = "#pager"data-cycle-pager-template ="<a href='#'><img src='{{src}}' height=50 width=75/>-->
                         <img src="images/cpr/autruches_cr.jpg" alt="">
                         <img src="images/cpr/chenilles_cr.jpg" alt="">
                         <img src="images/cpr/clown_cr.jpg" alt="">
@@ -107,10 +112,12 @@
                         <img src="images/cpr/poisson_cr.jpg" alt="">-->
                     </div>
                     <div id="pager"></div>
-                    <div id="prev"></div>
-                    <div id="next"></div>
-                    <!--<img id="prev"src="images/flecheG.png" alt="">
-                    <img id="next"src="images/flecheD.png" alt="">-->
+                    <div id="prev">
+                        <img src="images/Arrow-Left.png" alt="">
+                    </div>
+                    <div id="next">
+                        <img src="images/Arrow-Right.png" alt="">
+                    </div>
                 </div>
                 </div>
             </div>
@@ -135,15 +142,15 @@
             <div class="section__contact">
                 <h2 id="contact">Contact</h2>
                 <div class="section__contact--logo">
-                    <br>
-                    <br>
+
+                    <div class="address">
                         <h4>charlotte.risch@icloud.com</h4>
-                    <br>
-                    <br>
-                    <br>
-                        <p class="social"><strong>Suivez moi sur les reseaux sociaux:</strong>  </p>
+                    </div>
+                    <div class="social">
+                        <p><strong>Suivez moi sur les reseaux sociaux:</strong>  </p>
                         <a href="https://fr.pinterest.com/charlotter1541/" class="pinterest"><img src="images/pinterest.png" alt="logo pinterest" class="pin"/></a>
                         <a href="https://www.instagram.com/charlotterisch/" class="instagram"><img src="images/instagram.png" alt="logo instagram" class="insta"/></a>
+                    </div>
                 </div>
             </div>
         </section>

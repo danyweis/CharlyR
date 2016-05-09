@@ -44,6 +44,7 @@ body {
   height: 102px;
   position: fixed;
   top: -1px;
+  z-index: 1000;
   background-color: #ececec; }
 
 .logoCharlyR {
@@ -124,6 +125,7 @@ li {
   max-height: 300px; }
 
 .section__oeuvres {
+  display: none;
   height: calc(100vh - 101px);
   max-width: 100%;
   margin-top: 101px;
@@ -133,10 +135,11 @@ li {
   background-size: cover; }
 
 #container {
-  width: calc(100vw - 20px);
+  width: calc(100vw - 40px);
   max-height: calc(100vh - 170px);
   overflow: hidden;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+  margin: auto; }
 
 #slideshow {
   max-height: calc(100vh - 170px); }
@@ -150,119 +153,107 @@ li {
 
 #prev {
   height: calc(100vh - 170px);
-  width: 45%;
+  width: 50%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  margin: 150px 10px 0px 0px;
+  margin-top: 150px;
   z-index: 1000; }
+
+#prev img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 10px;
+  width: 32px;
+  height: 32px; }
 
 #next {
   height: calc(100vh - 170px);
-  width: 45%;
+  width: 50%;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  margin: 150px 0px 0px 10px;
+  margin-top: 150px;
   z-index: 1000; }
 
+#next img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 10px;
+  width: 32px;
+  height: 32px; }
+
 .section__philo {
+  display: none;
+  min-height: calc(100vh - 101px);
   max-width: 100%;
-  min-height: 500px;
+  margin-top: 101px;
+  padding-bottom: 10px;
   background-image: url(../images/tree_bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 10%; }
-  @media screen and (max-width: 800px) {
-    .section__philo {
-      min-height: 450px; } }
+  background-size: cover; }
 
 .section__philo--block {
-  border-radius: 15px;
-  max-width: 80%;
-  height: 80%;
-  margin-left: 10%;
-  padding-top: 20%;
-  padding-left: 55px;
-  padding-bottom: 10%;
-  background-image: url(../images/tree.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media screen and (max-width: 800px) {
-    .section__philo--block {
-      max-height: 300px;
-      padding-left: 10px; } }
-
-.section__philo--block--text {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
-  background-color: #ececec;
-  max-width: 500px;
-  padding: 15px;
-  margin-right: 10px;
-  border-radius: 10px;
-  border: 1px solid black; }
-  @media screen and (max-width: 800px) {
-    .section__philo--block--text {
-      max-height: 250px;
-      max-width: 300px;
-      overflow: scroll; } }
+  margin: 10px;
+  padding: 5px 10px;
+  background: rgba(236, 236, 236, 0.5);
+  border: 1px solid #2f2f2f;
+  border-radius: 15px; }
 
 .section__contact {
+  display: none;
+  min-height: calc(100vh - 101px);
   max-width: 100%;
-  min-height: 400px;
+  margin-top: 101px;
+  position: relative;
   background-image: url(../images/papier_bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 10%; }
-  @media screen and (max-width: 800px) {
-    .section__contact {
-      min-height: 350px; } }
+  background-size: cover; }
+
+.section__contact--logo {
+  margin-top: 25px;
+  margin: auto; }
+
+.address {
+  width: 100%;
+  margin-bottom: 20px; }
 
 .social {
-  font-size: 19px; }
+  font-size: 19px;
+  padding-bottom: 10px; }
 
 .section__contact--logo {
   text-align: center; }
 
 .pin {
+  height: 50px;
+  width: auto;
   border-radius: 50%;
   margin: 0px 22px; }
 
 .insta {
+  height: 50px;
+  width: auto;
   border-radius: 50%;
   margin: 0px 22px; }
 
 .footer {
+  min-height: calc(100vh - 101px);
   max-width: 100%;
-  min-height: 100px;
-  margin: 0px 0px 0px 0px;
-  padding: 25px 0px 30px 0px;
+  margin-top: 101px;
+  padding: 0px 10px;
   background-image: url(../images/bois_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-z-index: 1; }
-
-.footer--block {
-  font-size: 20px;
-  margin: 0% 10%;
-  min-height: 170px;
-  background-color: #ececec;
-  border: 1px black solid;
-  border-radius: 15px;
-  padding: 10px 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8); }
-  @media screen and (max-width: 500px) {
-    .footer--block {
-      max-height: 250px;
-      overflow: scroll;
-      border-radius: 10px; } }
+  z-index: 1; }
 
 /*# sourceMappingURL=base.css.map */

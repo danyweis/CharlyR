@@ -1,4 +1,5 @@
 .section__oeuvres
+    display: none
     height: calc(100vh - 101px)
     max-width: 100%
     margin-top: 101px
@@ -9,10 +10,11 @@
         size: cover
 
 #container
-    width: calc(100vw - 20px)
+    width: calc(100vw - 40px)
     max-height: calc(100vh - 170px)
     overflow: hidden
     padding: 0px 10px
+    margin: auto
 
 
 
@@ -31,26 +33,51 @@
 
 
 
-#pager
-
+//#pager
+    display: none
+    height: 120px
+    width: calc(100% - 20px)
+    position: absolute
+    bottom: 10%
+    background: rgba(0,0,0,0.5)
+    z-index: 1000
+    opacity: 0
+    transition: all 0.3s ease-in-out 0s
+//#pager:hover
+    opacity: 1
 #prev
     height: calc(100vh - 170px)
-    width: 45%
+    width: 50%
     position: absolute
     top: 0
     bottom: 0
     left: 0
-    margin: 150px 10px 0px 0px
+    margin-top: 150px
     z-index: 1000
     //background-color: pink
-
+#prev img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto 10px
+    width: 32px
+    height: 32px
 #next
     height: calc(100vh - 170px)
-    width: 45%
+    width: 50%
     position: absolute
     top: 0
     bottom: 0
     right: 0
-    margin: 150px 0px 0px 10px
+    margin-top: 150px
     z-index: 1000
     //background-color: pink
+#next img
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    margin: auto 10px
+    width: 32px
+    height: 32px
