@@ -22,14 +22,14 @@ $(function () {
 	$citation = $('.footer');
 
 	$open.on('click', function(){
-		$open.fadeOut(1000);
-		$close.delay(1000).fadeIn(1000);
-		$nav.slideDown(1500);
+		$open.fadeOut(500);
+		$close.delay(600).fadeIn(500);
+		$nav.slideDown(1000);
 	});
 	$close.on('click', function(){
-		$close.fadeOut(1000);
-		$open.delay(1000).fadeIn(1000);
-		$nav.slideUp(1500);
+		$close.fadeOut(500);
+		$open.delay(600).fadeIn(500);
+		$nav.slideUp(1000);
 	});
 	$mobBiogr.on('click', function(){
 		$biogr.delay(1000).fadeIn(1000);
