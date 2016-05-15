@@ -1,3 +1,12 @@
+@mixin navigation
+	border-left: 1px solid #2f2f2f
+	border-radius: 5px
+	width: 100%
+	background: #000
+	color: #ececec
+
+
+
 .boxNavWeb
 	display: none
 
@@ -5,22 +14,31 @@
 	.boxNavWeb
 		display: block
 		position: fixed
-		margin-top: 100px
+		top: 100px
+		height: 50px
 		width: 100%
 		z-index: 2000
+		background: #ececec
+
 	.navWeb ul
 		display: flex
 		width: 100%
-		justify-content: space-around
+		justify-content: center
 	.navWeb ul li
 		border-top: none
-	.Biogr:hover
+		width: 20%
+		text-align: center
+		//border-left: 1px solid #2f2f2f
+	.navWeb ul li a
+		display: block
 		border-left: 1px solid #2f2f2f
-	.Oeuvres:hover
-		border-left: 1px solid #2f2f2f
-	.Philo:hover
-		border-left: 1px solid #2f2f2f
-	.Contact:hover
-		border-left: 1px solid #2f2f2f
-	.Citation:hover
-		border-left: 1px solid #2f2f2f
+	.biogr:hover
+		@include navigation
+	.oeuvres:hover
+		@include navigation
+	.philo:hover
+		@include navigation
+	.contact:hover
+		@include navigation
+	.citation:hover
+		@include navigation

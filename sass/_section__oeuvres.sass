@@ -15,16 +15,13 @@
     overflow: hidden
     padding: 0px 10px
     margin: auto
-
-
+    position: relative
 
 #slideshow
     max-height: calc(100vh - 170px)
     display: flex
     justify-content: center
-    //width: auto
-
-
+    max-width: 705px
 
 #slideshow img
     max-height: 100%
@@ -33,20 +30,6 @@
     left: 0px
     right: 0px
 
-
-
-//#pager
-    display: none
-    height: 120px
-    width: calc(100% - 20px)
-    position: absolute
-    bottom: 10%
-    background: rgba(0,0,0,0.5)
-    z-index: 1000
-    opacity: 0
-    transition: all 0.3s ease-in-out 0s
-//#pager:hover
-    opacity: 1
 #prev
     height: calc(100vh - 170px)
     width: 50%
@@ -54,9 +37,7 @@
     top: 0
     bottom: 0
     left: 0
-    margin-top: 150px
     z-index: 1000
-    //background-color: pink
 #prev img
     position: absolute
     top: 0
@@ -72,9 +53,7 @@
     top: 0
     bottom: 0
     right: 0
-    margin-top: 150px
     z-index: 1000
-    //background-color: pink
 #next img
     position: absolute
     top: 0
@@ -83,3 +62,41 @@
     margin: auto 10px
     width: 32px
     height: 32px
+@media screen and (min-width:800px)
+    .section__oeuvres
+        display: none
+        margin-top: 150px
+        height: calc(100vh - 150px)
+    #prev
+        width: 20%
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        z-index: 1000
+    #prev img
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        margin: auto 10px
+        width: 64px
+        height: 64px
+    #next
+        width: 20%
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        z-index: 1000
+    #next img
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto 10px
+        width: 64px
+        height: 64px
+
+    #Oeuvres
+        display: none

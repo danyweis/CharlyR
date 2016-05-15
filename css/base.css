@@ -159,32 +159,60 @@ li p {
   .boxNavWeb {
     display: block;
     position: fixed;
-    margin-top: 100px;
+    top: 100px;
+    height: 50px;
     width: 100%;
-    z-index: 2000; }
+    z-index: 2000;
+    background: #ececec; }
 
   .navWeb ul {
     display: flex;
     width: 100%;
-    justify-content: space-around; }
+    justify-content: center; }
 
   .navWeb ul li {
-    border-top: none; }
+    border-top: none;
+    width: 20%;
+    text-align: center; }
 
-  .Biogr:hover {
+  .navWeb ul li a {
+    display: block;
     border-left: 1px solid #2f2f2f; }
 
-  .Oeuvres:hover {
-    border-left: 1px solid #2f2f2f; }
+  .biogr:hover {
+    border-left: 1px solid #2f2f2f;
+    border-radius: 5px;
+    width: 100%;
+    background: #000;
+    color: #ececec; }
 
-  .Philo:hover {
-    border-left: 1px solid #2f2f2f; }
+  .oeuvres:hover {
+    border-left: 1px solid #2f2f2f;
+    border-radius: 5px;
+    width: 100%;
+    background: #000;
+    color: #ececec; }
 
-  .Contact:hover {
-    border-left: 1px solid #2f2f2f; }
+  .philo:hover {
+    border-left: 1px solid #2f2f2f;
+    border-radius: 5px;
+    width: 100%;
+    background: #000;
+    color: #ececec; }
 
-  .Citation:hover {
-    border-left: 1px solid #2f2f2f; } }
+  .contact:hover {
+    border-left: 1px solid #2f2f2f;
+    border-radius: 5px;
+    width: 100%;
+    background: #000;
+    color: #ececec; }
+
+  .citation:hover {
+    border-left: 1px solid #2f2f2f;
+    border-radius: 5px;
+    width: 100%;
+    background: #000;
+    color: #ececec; } }
 .section__tete {
   margin-top: 100px;
   width: 100%;
@@ -223,6 +251,11 @@ li p {
   max-width: 35%;
   max-height: 300px; }
 
+@media screen and (min-width: 800px) {
+  .section__biogr {
+    display: none;
+    min-height: calc(100vh - 150px);
+    margin-top: 150px; } }
 .section__oeuvres {
   display: none;
   height: calc(100vh - 100px);
@@ -238,12 +271,14 @@ li p {
   max-height: calc(100vh - 170px);
   overflow: hidden;
   padding: 0px 10px;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
 
 #slideshow {
   max-height: calc(100vh - 170px);
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 705px; }
 
 #slideshow img {
   max-height: 100%;
@@ -259,7 +294,6 @@ li p {
   top: 0;
   bottom: 0;
   left: 0;
-  margin-top: 150px;
   z-index: 1000; }
 
 #prev img {
@@ -278,7 +312,6 @@ li p {
   top: 0;
   bottom: 0;
   right: 0;
-  margin-top: 150px;
   z-index: 1000; }
 
 #next img {
@@ -290,12 +323,53 @@ li p {
   width: 32px;
   height: 32px; }
 
+@media screen and (min-width: 800px) {
+  .section__oeuvres {
+    display: none;
+    margin-top: 150px;
+    height: calc(100vh - 150px); }
+
+  #prev {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; }
+
+  #prev img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 10px;
+    width: 64px;
+    height: 64px; }
+
+  #next {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000; }
+
+  #next img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 10px;
+    width: 64px;
+    height: 64px; }
+
+  #Oeuvres {
+    display: none; } }
 .section__philo {
   display: none;
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   max-width: 100%;
   margin-top: 100px;
-  padding-bottom: 10px;
   background-image: url(../images/tree_bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -308,9 +382,18 @@ li p {
   border: 1px solid #2f2f2f;
   border-radius: 15px; }
 
+@media screen and (min-width: 800px) {
+  .section__philo {
+    display: none;
+    height: calc(100vh - 150px);
+    margin-top: 150px; }
+
+  .section__philo--block {
+    margin: 20px;
+    padding: 15px; } }
 .section__contact {
   display: none;
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   max-width: 100%;
   margin-top: 100px;
   position: relative;
@@ -346,12 +429,24 @@ li p {
   border-radius: 50%;
   margin: 0px 22px; }
 
+@media screen and (min-width: 800px) {
+  .section__contact {
+    display: none;
+    height: calc(100vh - 150px);
+    max-width: 100%;
+    margin-top: 150px; }
+
+  .section__contact--logo {
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; } }
 .footer {
   display: none;
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   max-width: 100%;
   margin-top: 100px;
-  padding: 0px 10px 10px 10px;
   background-image: url(../images/bois_bg.png);
   background-position: center;
   background-size: cover;
@@ -363,5 +458,12 @@ li p {
   background: rgba(236, 236, 236, 0.5);
   border: 1px solid #2f2f2f;
   border-radius: 15px; }
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: none;
+    max-height: calc(100vh - 150px);
+    max-width: 100%;
+    margin-top: 150px; } }
 
 /*# sourceMappingURL=base.css.map */
