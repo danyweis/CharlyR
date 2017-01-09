@@ -1,10 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poller One", cursive;
-  color: black;
-  text-decoration: underline; }
+  font-family: 'Poller One', cursive;
+  color: #333; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 30px; }
 
 h2 {
   font-size: 35px;
@@ -24,195 +23,81 @@ h6 {
   font-size: 20px; }
 
 p {
-  font-family: "Oxygen", sans-serif; }
+  font-family: 'Oxygen', sans-serif; }
 
 a {
-  font-family: "Oxygen", sans-serif;
-  color: #2f2f2f;
+  font-family: 'Oxygen', sans-serif;
+  color: #333;
   text-decoration: none; }
 
 body {
   margin: 0px;
   background-color: #6d6d6d; }
 
-.main {
-  width: 100%;
-  margin: 0px; }
+label {
+  cursor: pointer; }
 
 .boiteLogo {
   width: 100%;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background-color: #ececec; }
-
-.logoCharlyR {
-  width: 80%;
-  height: 100px;
-  float: left;
-  background-image: url(../images/CharlyR.png);
-  background-size: contain;
+  height: 100vh;
+  background-image: url(../images/LESHARLEQUIN.JPG);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-attachment: fixed;
+  z-index: 50; }
 
-.menuButton {
-  width: 20%;
-  height: 100px;
-  float: left; }
+.pict {
+  width: auto;
+  height: 100vh;
+  z-index: 100;
+  background-image: url(../images/charlyRbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
-.menuWeb {
-  display: none; }
-
-.mobile-nav {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  margin-top: 25px;
-  display: flex;
-  align-items: center; }
-
-.nav__charlyr {
-  display: none;
+.toggle {
   position: fixed;
-  top: 100px;
-  background-color: #ececec;
-  right: 0px;
-  z-index: 1001; }
-
-ul {
-  padding-left: 0px;
-  margin: 0px; }
+  top: 20px;
+  left: 20px;
+  font-size: 50px;
+  z-index: 1;
+  color: #333; }
+  .toggle:hover {
+    color: #af8484; }
 
 li {
-  padding: 5px 10px;
-  list-style: none;
-  border-top: 1px solid #2f2f2f;
-  font-size: 25px; }
+  list-style-type: none;
+  margin-top: 16px; }
+  li a {
+    color: whitesmoke; }
+    li a:hover {
+      color: #af8484; }
 
-li p {
-  margin: 0px; }
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: -190px;
+  width: 150px;
+  padding: 30px 0 0 30px;
+  background: #333;
+  z-index: 0; }
 
-#menu-open {
-  display: block;
-  cursor: pointer; }
-
-#menu,
-#menu:before,
-#menu:after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 50px;
-  background: #6d6d6d;
-  position: relative; }
-
-#menu:before {
-  top: 15px; }
-
-#menu:after {
-  top: -17px; }
-
-#menu-close {
-  display: none;
-  cursor: pointer; }
-
-#x,
-#x:before,
-#x:after {
-  display: none;
-  content: "";
-  display: block;
-  height: 2px;
-  width: 50px;
-  background: #6d6d6d;
-  position: relative; }
-
-#x:before {
-  top: 15px; }
-
-#x:after {
-  top: -17px; }
-
-#x {
-  background: transparent; }
-
-#x:before,
-#x:after {
-  transform-origin: center;
-  transform: rotate(45deg);
-  top: 0; }
-
-#x:before {
-  transform: rotate(-45deg); }
-
-@media screen and (min-width: 800px) {
-  .menuButton {
-    display: none; }
-
-  .logoCharlyR {
-    width: 100%; } }
-.boxNavWeb {
+#sideBox {
   display: none; }
 
-@media screen and (min-width: 800px) {
-  .boxNavWeb {
-    display: block;
-    position: fixed;
-    top: 100px;
-    height: 50px;
-    width: 100%;
-    z-index: 2000;
-    background: #ececec; }
+#sideBox:checked + .mainContent .sidebar {
+  left: 0px; }
 
-  .navWeb ul {
-    display: flex;
-    width: 100%;
-    justify-content: center; }
+#sideBox:checked + .mainContent .toggle {
+  left: 200px; }
 
-  .navWeb ul li {
-    border-top: none;
-    width: 20%;
-    text-align: center; }
+#sideBox:checked + .mainContent .contenu {
+  padding-left: 180px; }
 
-  .navWeb ul li a {
-    display: block;
-    border-left: 1px solid #2f2f2f; }
+#sideBox:checked + .mainContent #Biogr {
+  padding-left: 180px; }
 
-  .biogr:hover {
-    border-left: 1px solid #2f2f2f;
-    border-radius: 5px;
-    width: 100%;
-    background: rgba(47, 47, 47, 0.5);
-    color: #ececec; }
-
-  .oeuvres:hover {
-    border-left: 1px solid #2f2f2f;
-    border-radius: 5px;
-    width: 100%;
-    background: rgba(47, 47, 47, 0.5);
-    color: #ececec; }
-
-  .philo:hover {
-    border-left: 1px solid #2f2f2f;
-    border-radius: 5px;
-    width: 100%;
-    background: rgba(47, 47, 47, 0.5);
-    color: #ececec; }
-
-  .contact:hover {
-    border-left: 1px solid #2f2f2f;
-    border-radius: 5px;
-    width: 100%;
-    background: rgba(47, 47, 47, 0.5);
-    color: #ececec; }
-
-  .citation:hover {
-    border-left: 1px solid #2f2f2f;
-    border-radius: 5px;
-    width: 100%;
-    background: rgba(47, 47, 47, 0.5);
-    color: #ececec; } }
 .section__tete {
   margin-top: 100px;
   width: 100%;
@@ -228,33 +113,38 @@ li p {
   height: auto;
   margin: 0px; }
 
-.section__biogr {
-  display: none;
-  min-height: calc(100vh - 100px);
-  margin-top: 100px;
-  padding: 0px 10px;
-  background-image: url(../images/bois_bg.png);
-  background-position: center;
+.topBiog {
+  margin: 0px auto;
+  height: 100px;
+  max-width: 960px;
+  background-image: url(../images/aragnier.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat; }
 
-.section--block {
-  background: rgba(236, 236, 236, 0.5);
-  border-radius: 15px;
-  padding: 5px 15px;
-  border: 1px solid #2f2f2f; }
+#Biogr {
+  padding: 0px 20px;
+  background-image: url(../images/bois_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-.biogr--tete {
-  margin: 16px 15px 15px 0px;
-  float: left;
-  max-width: 35%;
-  max-height: 300px; }
+.boiteBottom {
+  display: flex;
+  justify-content: space-between; }
 
-@media screen and (min-width: 800px) {
-  .section__biogr {
-    display: none;
-    height: calc(100vh - 150px);
-    margin-top: 150px; } }
+.boiteFormation, .boitePhilosophie {
+  max-width: calc(45% - 20px);
+  text-align: justify;
+  margin: 0px 10px; }
+
+.boiteBiographie, .boiteFormation, .boitePhilosophie {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ececec;
+  border-radius: 10px; }
+
 .section__oeuvres {
   display: none;
   height: calc(100vh - 100px);
@@ -327,7 +217,6 @@ li p {
     display: none;
     margin-top: 150px;
     height: calc(100vh - 150px); }
-
   #prev {
     width: 20%;
     position: absolute;
@@ -335,7 +224,6 @@ li p {
     bottom: 0;
     left: 0;
     z-index: 1000; }
-
   #prev img {
     position: absolute;
     top: 0;
@@ -344,7 +232,6 @@ li p {
     margin: auto 10px;
     width: 64px;
     height: 64px; }
-
   #next {
     width: 20%;
     position: absolute;
@@ -352,7 +239,6 @@ li p {
     bottom: 0;
     right: 0;
     z-index: 1000; }
-
   #next img {
     position: absolute;
     top: 0;
@@ -361,9 +247,9 @@ li p {
     margin: auto 10px;
     width: 64px;
     height: 64px; }
-
   #Oeuvres {
     display: none; } }
+
 .section__philo {
   display: none;
   height: calc(100vh - 100px);
@@ -386,10 +272,10 @@ li p {
     display: none;
     height: calc(100vh - 150px);
     margin-top: 150px; }
-
   .section__philo--block {
     margin: 20px;
     padding: 15px; } }
+
 .section__contact {
   display: none;
   height: calc(100vh - 100px);
@@ -434,13 +320,13 @@ li p {
     height: calc(100vh - 150px);
     max-width: 100%;
     margin-top: 150px; }
-
   .section__contact--logo {
     max-height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; } }
+
 .footer {
   display: none;
   height: calc(100vh - 100px);
@@ -464,5 +350,3 @@ li p {
     max-height: calc(100vh - 150px);
     max-width: 100%;
     margin-top: 150px; } }
-
-/*# sourceMappingURL=base.css.map */

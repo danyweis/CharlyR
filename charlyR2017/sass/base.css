@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Kite One', sans-serif; }
+
+a {
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  color: #f6f5f3;
+  font-size: 1.5em; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.navbar {
+  padding-top: 3.5em; }
+
+.navbox {
+  border-bottom: 1px solid #f6f5f3;
+  background-color: #202020;
+  opacity: 0.9; }
+
+.imgCharlyR {
+  max-height: 75px; }
+
+.logobox {
+  margin-top: calc( 100vh - 50%); }
+  @media only screen and (max-width: 992px) {
+    .logobox {
+      margin-top: calc( 100vh - 75%); } }
+  @media only screen and (max-width: 768px) {
+    .logobox {
+      margin-top: 25%; } }
+
+.logoCharlyR {
+  max-width: 90%; }
+
+.bgHome {
+  position: relative;
+  text-align: center;
+  background-image: url(../images/bgHome.JPG);
+  background-size: cover;
+  background-position: center; }
+
+.bgColor {
+  width: 100%;
+  height: 100vh;
+  background-color: #202020;
+  opacity: 0.8; }
+
+.home {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0; }

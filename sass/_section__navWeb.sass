@@ -1,44 +1,43 @@
-@mixin navigation
-	border-left: 1px solid #2f2f2f
-	border-radius: 5px
-	width: 100%
-	background: rgba(47, 47, 47, 0.5)
-	color: #ececec
+.toggle
+    position: fixed
+    top: 20px
+    left: 20px
+    font-size: 50px
+    z-index: 1
+    color: #333
+    &:hover
+        color: #af8484
+    //background:
+        color: #ececec
 
-
-
-.boxNavWeb
-	display: none
-
-@media screen and (min-width:800px)
-	.boxNavWeb
-		display: block
-		position: fixed
-		top: 100px
-		height: 50px
-		width: 100%
-		z-index: 2000
-		background: #ececec
-
-	.navWeb ul
-		display: flex
-		width: 100%
-		justify-content: center
-	.navWeb ul li
-		border-top: none
-		width: 20%
-		text-align: center
-		//border-left: 1px solid #2f2f2f
-	.navWeb ul li a
-		display: block
-		border-left: 1px solid #2f2f2f
-	.biogr:hover
-		@include navigation
-	.oeuvres:hover
-		@include navigation
-	.philo:hover
-		@include navigation
-	.contact:hover
-		@include navigation
-	.citation:hover
-		@include navigation
+li
+    list-style-type: none
+    margin-top: 16px
+    a
+        color: whitesmoke
+        //color: wheat
+        //color: #af8484
+        &:hover
+            color: #af8484
+            //color: whitesmoke
+            //color: #ececec
+.sidebar
+    position: fixed
+    top: 0px
+    bottom: 0px
+    left: -190px
+    width: 150px
+    padding: 30px 0 0 30px
+    background: #333
+    z-index: 0
+#sideBox
+    display: none
+#sideBox:checked + .mainContent
+    .sidebar
+        left: 0px
+    .toggle
+        left: 200px
+    .contenu
+        padding-left: 180px
+    #Biogr
+        padding-left: 180px

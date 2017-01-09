@@ -1,26 +1,49 @@
-.section__biogr
-    display: none
-    min-height: calc(100vh - 100px)
-    margin-top: 100px
-    padding: 0px 10px
+.topBiog
+    margin: 0px auto
+    height: 100px
+    max-width: 960px
     background:
-        image: url(../images/bois_bg.png)
+        image: url(../images/aragnier.jpg)
+        size: cover
+        position: center
+        repeat: no-repeat
+
+#Biogr
+    padding: 0px 20px
+    background:
+        image: url(../images/bois_bg.jpg)
         position: center
         size: cover
         repeat: no-repeat
-    
-.section--block
+        attachment: fixed
+
+.boiteBottom
+    display: flex
+    justify-content: space-between
+
+.boiteFormation, .boitePhilosophie
+    max-width: calc(45% - 20px)
+    text-align: justify
+    margin: 0px 10px
+
+.boiteBiographie, .boiteFormation, .boitePhilosophie
+    margin-top: 10px
+    padding: 10px
+    background:
+        color: #ececec
+    border-radius: 10px
+//.section--block
     background: rgba(236, 236, 236, 0.5)
     border-radius: 15px
     padding: 5px 15px
     border: 1px solid #2f2f2f
 
-.biogr--tete
+//.biogr--tete
     margin: 16px 15px 15px 0px
     float: left
     max-width: 35%
     max-height: 300px
-@media screen and (min-width:800px)
+//@media screen and (min-width:800px)
     .section__biogr
         display: none
         height: calc(100vh - 150px)
