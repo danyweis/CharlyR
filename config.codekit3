@@ -69,6 +69,12 @@
 		"oAP": "\/.sass-cache\/4a65b19721fa8470426fe1515c02e9a208234761\/base.sassc",
 		"oF": 0
 		},
+	"\/charlyR2017\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/charlyR2017\/about.html",
+		"oF": 0
+		},
 	"\/charlyR2017\/bootstrap-3.3.7-dist\/css\/bootstrap-theme.css": {
 		"aP": 0,
 		"bl": 0,
@@ -193,6 +199,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/charlyR2017\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/charlyR2017\/contact.html",
+		"oF": 0
 		},
 	"\/charlyR2017\/favicon\/android-icon-144x144.png": {
 		"ft": 32768,
@@ -442,6 +454,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/charlyR2017\/index.html",
+		"oF": 0
+		},
+	"\/charlyR2017\/oeuvre.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/charlyR2017\/oeuvre.html",
 		"oF": 0
 		},
 	"\/charlyR2017\/sass\/_about.sass": {
