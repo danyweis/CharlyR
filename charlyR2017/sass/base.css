@@ -1,6 +1,10 @@
 body {
   margin: 0;
+  text-align: center;
   font-family: 'Kite One', sans-serif; }
+
+h3 {
+  text-decoration: underline; }
 
 a {
   text-decoration: none;
@@ -44,10 +48,9 @@ a:hover {
 
 .navbarA a:hover {
   transition-property: all;
-  transition-duration: 3s;
+  transition-duration: 1s;
   transform: scale(1.5);
-  color: #fc5b48;
-  z-index: 100; }
+  color: #fc5b48; }
 
 .bgHome {
   position: relative;
@@ -68,12 +71,90 @@ a:hover {
   right: 0;
   top: 0; }
 
-footer {
+.bgAbout {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; }
+
+.bgTriangleDown {
+  z-index: -1;
   position: absolute;
-  bottom: 0px;
+  bottom: -50%;
+  left: 50%;
+  min-width: 500px;
+  height: 100%;
+  background-color: #282828;
+  transform: rotate(45deg) skewX(-20deg); }
+
+.bgTriangleUp {
+  z-index: -1;
+  position: absolute;
+  top: -50%;
+  right: 50%;
+  min-width: 500px;
+  height: 100%;
+  background-color: #282828;
+  transform: rotate(45deg) skewX(-20deg); }
+
+.aboutBox {
+  min-height: 600px;
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #fcfafb;
+  box-shadow: 0 0 15px black; }
+  .aboutBox h1 {
+    text-shadow: 0 0 1px black; }
+
+.Charly {
+  width: 60%;
+  box-shadow: 1px 0 15px black; }
+
+.bgContact {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../images/bgContact.jpg); }
+
+.pinterest {
+  height: 50px;
+  display: block;
+  background-image: url(../images/pinterest.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.instagram {
+  height: 50px;
+  display: block;
+  background-image: url(../images/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+footer {
+  border-bottom: #f6f5f3;
   text-align: center;
   width: 100%;
   color: #f6f5f3;
   font-size: 10px; }
   footer a {
-    text-decoration: underline; }
+    text-decoration: underline;
+    display: inline-block; }
+  footer a:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(5deg);
+    color: #fc5b48; }
+  footer p {
+    z-index: 50;
+    background-color: #282828;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 10px; }
+  footer p:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 1px #f6f5f3; }
+
+.bgHome footer {
+  position: absolute;
+  bottom: 0px; }

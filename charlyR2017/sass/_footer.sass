@@ -1,9 +1,32 @@
+
 footer
-    position: absolute
-    bottom: 0px
+    border-bottom: #f6f5f3
     text-align: center
     width: 100%
     color: #f6f5f3
     font-size: 10px
     a
         text-decoration: underline
+        display: inline-block
+
+    a:hover
+        transition-property: all
+        transition-duration: 1s
+        transform: rotate(5deg)
+        color: #fc5b48
+    p
+        z-index: 50
+        background:
+            color: #282828
+        opacity: 0.8
+        padding: 5px
+        border-radius: 10px
+    p:hover
+        transition-property: all
+        transition-duration: 1s
+        box-shadow: 0px 0px 1px #f6f5f3
+
+.bgHome
+    footer
+        position: absolute
+        bottom: 0px
