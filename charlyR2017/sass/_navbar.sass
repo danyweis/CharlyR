@@ -1,13 +1,17 @@
 .navbar
     padding-top: 3.5em
-
+    @media only screen and (max-width : 768px)
+        padding-top: 1.5em
+.navbarHidden
+    position: relative
+    @media only screen and (max-width : 768px)
+        //display: none
 
 .navbox
     border-bottom: 1px solid #f6f5f3
     background:
         color: #202020
     opacity: 0.9
-
 
 .imgCharlyR
     max-height: 75px
@@ -25,11 +29,9 @@
     a
         display: block
 
-
 .navbarA
     a:hover
         transition-property: all
         transition-duration: 1s
         transform: scale(1.5)
         color: #fc5b48
-        
